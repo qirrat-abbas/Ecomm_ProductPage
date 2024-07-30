@@ -1,0 +1,50 @@
+<div class="container-fluid">
+
+    <div class="container">
+        <div class="row">
+            <h2 id="products">Products:</h2>
+        </div>
+    </div>
+    
+    <div class="container productMain">
+        <div class="row">
+
+            <div class="col-xs-7 col-sm-7 col-md-5 col-lg-3  productContainer" *ngFor="let items of myProducts">
+                <div class="imgContainer">
+                    <i class="fa-solid fa-heart heart" id="heartIcon"
+                        [ngStyle]="{'color': items.isFav ? 'rgb(190, 10, 58)' : 'rgba(222, 217, 217, 0.8)'}"
+                        (click) = "toggleFav(items)">
+                    </i>
+                    <img [src]="items.image" alt="{{items.image}}">
+                </div>
+
+                <div class="productDetails">
+                    <h2 class="productName">{{items.title}}</h2>
+                    <p class="productPrice">$ {{items.price}}</p>
+                </div>
+
+                <div class="ratings">
+                    <p>
+                        <i class="fa-solid fa-star star"></i>
+                        <i class="fa-solid fa-star star"></i>
+                        <i class="fa-solid fa-star star"></i>
+                        <i class="fa-solid fa-star star"></i>
+                        <i class="fa-solid fa-star star"></i>
+                        23
+                    </p>
+                </div>
+
+                <div class="productDescription">
+                    <p>{{items.description}}</p>
+                </div>
+
+                <div class="productFooter">
+                    <button class="btn btn-md" id="detailBtn">View Details</button>
+                    <button class="btn btn-warning btn-md" (click)="addtoCart()">ADD <i class="fas fa-shopping-cart" id="cart"></i> </button>
+                </div>
+            </div>
+
+        </div>   
+    </div>
+
+</div>

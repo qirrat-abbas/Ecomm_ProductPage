@@ -1,0 +1,17 @@
+.picsum-img-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*background-color: rgb(183, 165, 144);*/
+}
+
+.picsum-img-wrapper img{
+    width: 100%;
+    height: auto;
+    max-height: 400px;
+    min-height: 300px;
+}
+
+.container-fluid{
+    margin: 0; padding: 0;
+}

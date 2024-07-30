@@ -1,0 +1,9 @@
+<div class="container-fluid" id="carousel">
+ <ngb-carousel>
+        <ng-template ngbSlide *ngFor="let img of images; let i = index">
+            <div class="picsum-img-wrapper">
+                <img [src]="img"/>
+            </div>
+        </ng-template>
+    </ngb-carousel>
+</div>

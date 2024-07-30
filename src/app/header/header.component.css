@@ -1,0 +1,84 @@
+
+.nav-item:nth-child(1), .nav-item:nth-child(2), .nav-item:nth-child(3){
+    margin-left: 3%;
+}
+
+.navbar-brand, .nav-item, #account, #cart{
+    color: rgb(238, 238, 238);
+}
+
+.navbar-brand{
+    font-size: x-large;
+}
+
+.navbar-toggler {
+    color: white;
+    border-color: rgba(255, 255, 255, 0.1); /* Ensure the border is visible */
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+.nav-item{
+    font-size: large;
+}
+
+button .navbar-toggler{
+    color: white;
+}
+
+.nav-item:hover{
+    background-color: rgb(168, 171, 171, 0.4);
+    border-radius: 4px;
+    transition: 0.1s ease-in;
+
+}
+
+#account:hover, #cart:hover{
+    color:  rgba(229, 232, 232, 0.8);
+    transform: scale(1.02);
+}
+
+.navbar-nav{
+    margin-left: auto;
+}
+
+
+#account{
+    margin-right: 40px;
+    margin-left: 0px;
+}
+
+#cart{
+    margin-right: 0px;
+    margin-left: 70px;
+    padding-right: 0;
+}
+
+#account, #cart{
+    font-size: large;
+}
+
+#header{
+    background-color: rgba(36, 35, 32, 0.9);
+}
+
+#header:hover{
+    background-color: rgb(42, 41, 35)
+}
+
+.circle{
+    background-color: white;
+    border-radius: 50%;
+    height: 16px; width: 60px;
+    display: flex;
+    align-items: center; justify-content: center;
+    margin-left: 6px; margin-right: 3px;
+    margin-top: 5px;
+}
+
+#cartNo{
+    font-size: 14px;
+    font-weight: 500;
+}
